@@ -1,4 +1,4 @@
-# How to write
+# How to write Markdown (MD)
 
 Markdown is a simple markup language that enables you to easily format text using a plain text editor. Here is a quick guide to the most common Markdown syntax:
 
