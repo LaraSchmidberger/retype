@@ -4,42 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744066304829">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744067320535">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Heart</title>
-    <meta name="title" content="Heart">
-    <meta name="description" content="Hi! I'm your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me.">
+    <title>GitHub Actions</title>
+    <meta name="title" content="GitHub Actions">
+    <meta name="description" content="Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://jackgraymer.github.io/retype/heart/">
+    <link rel="canonical" href="https://jackgraymer.github.io/retype/guides/github-actions/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jackgraymer.github.io/retype/heart/">
-    <meta property="og:title" content="Heart">
-    <meta property="og:description" content="Hi! I'm your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me.">
+    <meta property="og:url" content="https://jackgraymer.github.io/retype/guides/github-actions/">
+    <meta property="og:title" content="GitHub Actions">
+    <meta property="og:description" content="Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jackgraymer.github.io/retype/heart/">
-    <meta property="twitter:title" content="Heart">
-    <meta property="twitter:description" content="Hi! I'm your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me.">
+    <meta property="twitter:url" content="https://jackgraymer.github.io/retype/guides/github-actions/">
+    <meta property="twitter:title" content="GitHub Actions">
+    <meta property="twitter:description" content="Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("/retype/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../static/icon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.1.0.744066304829" rel="stylesheet">
+    <link href="../../static/icon.png" rel="icon">
+    <link href="../../resources/css/retype.css?v=3.1.0.744067320535" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.1.0.744066304829" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.1.0.744066304829" data-turbo-eval="false" defer></script>
-    <script id="mermaid-js" data-cfasync="false" src="../resources/js/mermaid.js?v=3.1.0" defer></script>
-    <link href="../resources/css/katex.css?v=3.1.0" rel="stylesheet">
-    <script id="katex-js" data-cfasync="false" src="../resources/js/katex.js?v=3.1.0" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.744067320535" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.744067320535" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.744067320535" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -54,10 +52,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../static/icon.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../static/icon.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/icon.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/icon.png">
                             </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Medicine</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">MD</span>
@@ -173,226 +171,161 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="heart" class="break-words">
+<doc-anchor-target id="github-actions" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#heart">#</doc-anchor-trigger>
-        <span>Heart</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#github-actions">#</doc-anchor-trigger>
+        <span>GitHub Actions</span>
     </h1>
 </doc-anchor-target>
-<p>Hi! I&#x27;m your first Markdown file in <strong>StackEdit</strong>. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the <strong>file explorer</strong> on the left corner of the navigation bar.</p>
-<doc-anchor-target id="files">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#files">#</doc-anchor-trigger>
-        <span>Files</span>
-    </h1>
-</doc-anchor-target>
-<p>StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible <strong>offline!</strong></p>
-<doc-anchor-target id="create-files-and-folders">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-files-and-folders">#</doc-anchor-trigger>
-        <span>Create files and folders</span>
-    </h2>
-</doc-anchor-target>
-<p>The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the <strong>New file</strong> button in the file explorer. You can also create folders by clicking the <strong>New folder</strong> button.</p>
-<doc-anchor-target id="switch-to-another-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#switch-to-another-file">#</doc-anchor-trigger>
-        <span>Switch to another file</span>
-    </h2>
-</doc-anchor-target>
-<p>All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.</p>
-<doc-anchor-target id="rename-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rename-a-file">#</doc-anchor-trigger>
-        <span>Rename a file</span>
-    </h2>
-</doc-anchor-target>
-<p>You can rename the current file by clicking the file name in the navigation bar or by clicking the <strong>Rename</strong> button in the file explorer.</p>
-<doc-anchor-target id="delete-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-a-file">#</doc-anchor-trigger>
-        <span>Delete a file</span>
-    </h2>
-</doc-anchor-target>
-<p>You can delete the current file by clicking the <strong>Remove</strong> button in the file explorer. The file will be moved into the <strong>Trash</strong> folder and automatically deleted after 7 days of inactivity.</p>
-<doc-anchor-target id="export-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-a-file">#</doc-anchor-trigger>
-        <span>Export a file</span>
-    </h2>
-</doc-anchor-target>
-<p>You can export the current file by clicking <strong>Export to disk</strong> in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.</p>
-<doc-anchor-target id="synchronization">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#synchronization">#</doc-anchor-trigger>
-        <span>Synchronization</span>
-    </h1>
-</doc-anchor-target>
-<p>Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your <strong>Google Drive</strong>, your <strong>Dropbox</strong> and your <strong>GitHub</strong> accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.</p>
-<p>There are two types of synchronization and they can complement each other:</p>
-<ul>
-<li><p>The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.</p>
-<blockquote>
-<p>To start syncing your workspace, just sign in with Google in the menu.</p>
-</blockquote>
-</li>
-<li><p>The file synchronization will keep one file of the workspace synced with one or multiple files in <strong>Google Drive</strong>, <strong>Dropbox</strong> or <strong>GitHub</strong>.</p>
-<blockquote>
-<p>Before starting to sync files, you must link an account in the <strong>Synchronize</strong> sub-menu.</p>
-</blockquote>
-</li>
-</ul>
-<doc-anchor-target id="open-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#open-a-file">#</doc-anchor-trigger>
-        <span>Open a file</span>
-    </h2>
-</doc-anchor-target>
-<p>You can open a file from <strong>Google Drive</strong>, <strong>Dropbox</strong> or <strong>GitHub</strong> by opening the <strong>Synchronize</strong> sub-menu and clicking <strong>Open from</strong>. Once opened in the workspace, any modification in the file will be automatically synced.</p>
-<doc-anchor-target id="save-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#save-a-file">#</doc-anchor-trigger>
-        <span>Save a file</span>
-    </h2>
-</doc-anchor-target>
-<p>You can save any file of the workspace to <strong>Google Drive</strong>, <strong>Dropbox</strong> or <strong>GitHub</strong> by opening the <strong>Synchronize</strong> sub-menu and clicking <strong>Save on</strong>. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.</p>
-<doc-anchor-target id="synchronize-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#synchronize-a-file">#</doc-anchor-trigger>
-        <span>Synchronize a file</span>
-    </h2>
-</doc-anchor-target>
-<p>Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.</p>
-<p>If you just have modified your file and you want to force syncing, click the <strong>Synchronize now</strong> button in the navigation bar.</p>
-<blockquote>
-<p><strong>Note:</strong> The <strong>Synchronize now</strong> button is disabled if you have no file to synchronize.</p>
-</blockquote>
-<doc-anchor-target id="manage-file-synchronization">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manage-file-synchronization">#</doc-anchor-trigger>
-        <span>Manage file synchronization</span>
-    </h2>
-</doc-anchor-target>
-<p>Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking <strong>File synchronization</strong> in the <strong>Synchronize</strong> sub-menu. This allows you to list and remove synchronized locations that are linked to your file.</p>
-<doc-anchor-target id="publication">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#publication">#</doc-anchor-trigger>
-        <span>Publication</span>
-    </h1>
-</doc-anchor-target>
-<p>Publishing in StackEdit makes it simple for you to publish online your files. Once you&#x27;re happy with a file, you can publish it to different hosting platforms like <strong>Blogger</strong>, <strong>Dropbox</strong>, <strong>Gist</strong>, <strong>GitHub</strong>, <strong>Google Drive</strong>, <strong>WordPress</strong> and <strong>Zendesk</strong>. With <a href="http://handlebarsjs.com/">Handlebars templates</a>, you have full control over what you export.</p>
-<blockquote>
-<p>Before starting to publish, you must link an account in the <strong>Publish</strong> sub-menu.</p>
-</blockquote>
-<doc-anchor-target id="publish-a-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#publish-a-file">#</doc-anchor-trigger>
-        <span>Publish a File</span>
-    </h2>
-</doc-anchor-target>
-<p>You can publish your file by opening the <strong>Publish</strong> sub-menu and by clicking <strong>Publish to</strong>. For some locations, you can choose between the following formats:</p>
-<ul>
-<li>Markdown: publish the Markdown text on a website that can interpret it (<strong>GitHub</strong> for instance),</li>
-<li>HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).</li>
-</ul>
-<doc-anchor-target id="update-a-publication">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#update-a-publication">#</doc-anchor-trigger>
-        <span>Update a publication</span>
-    </h2>
-</doc-anchor-target>
-<p>After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the <strong>Publish now</strong> button in the navigation bar.</p>
-<blockquote>
-<p><strong>Note:</strong> The <strong>Publish now</strong> button is disabled if your file has not been published yet.</p>
-</blockquote>
-<doc-anchor-target id="manage-file-publication">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manage-file-publication">#</doc-anchor-trigger>
-        <span>Manage file publication</span>
-    </h2>
-</doc-anchor-target>
-<p>Since one file can be published to multiple locations, you can list and manage publish locations by clicking <strong>File publication</strong> in the <strong>Publish</strong> sub-menu. This allows you to list and remove publication locations that are linked to your file.</p>
-<doc-anchor-target id="markdown-extensions">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#markdown-extensions">#</doc-anchor-trigger>
-        <span>Markdown extensions</span>
-    </h1>
-</doc-anchor-target>
-<p>StackEdit extends the standard Markdown syntax by adding extra <strong>Markdown extensions</strong>, providing you with some nice features.</p>
-<blockquote>
-<p><strong>ProTip:</strong> You can disable any <strong>Markdown extension</strong> in the <strong>File properties</strong> dialog.</p>
-</blockquote>
-<doc-anchor-target id="smartypants">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#smartypants">#</doc-anchor-trigger>
-        <span>SmartyPants</span>
-    </h2>
-</doc-anchor-target>
-<p>SmartyPants converts ASCII punctuation characters into &quot;smart&quot; typographic punctuation HTML entities. For example:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th></th>
-<th>ASCII</th>
-<th>HTML</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Single backticks</td>
-<td><code v-pre>'Isn't this fun?'</code></td>
-<td>&#x27;Isn&#x27;t this fun?&#x27;</td>
-</tr>
-<tr>
-<td>Quotes</td>
-<td><code v-pre>&quot;Isn't this fun?&quot;</code></td>
-<td>&quot;Isn&#x27;t this fun?&quot;</td>
-</tr>
-<tr>
-<td>Dashes</td>
-<td><code v-pre>-- is en-dash, --- is em-dash</code></td>
-<td>-- is en-dash, --- is em-dash</td>
-</tr>
-</tbody>
-</table>
+<p>Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.</p>
+<p>Currently, there are two Retype related GitHub Actions:</p>
+<ol>
+<li>Retype <a href="https://github.com/retypeapp/action-build">Build Action</a></li>
+<li>Retype <a href="https://github.com/retypeapp/action-github-pages">GitHub Pages Action</a></li>
+</ol>
+<p>The first, <strong>Build Action</strong> will automatically build your Retype powered website with each new change that is committed.</p>
+<p>The second, <strong>GitHub Pages Action</strong> will automatically publish your newly built website to a branch in Github so it is available to host from <a href="https://pages.github.com/">GitHub Pages</a>. By default, the <code v-pre>retype</code> branch is used, but of course that is also configurable, it can also be used to deploy to <a href="https://www.netlify.com/">Netlify</a> and alot of other pages!</p>
+<p>Automatically deploying to GitHub Pages requires a basic <strong>retype-action.yml</strong> configuration file to be added to your GitHub repo and some simple project configuration.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Content <code v-pre>write</code> permission are required so that Retype and can automatically create the <code v-pre>retype</code> branch and write the generated files into that branch.</p>
+        </div>
+    </div>
 </div>
-<doc-anchor-target id="katex">
+<hr>
+<doc-anchor-target id="summary">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#katex">#</doc-anchor-trigger>
-        <span>KaTeX</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <span>Summary</span>
     </h2>
 </doc-anchor-target>
-<p>You can render LaTeX mathematical expressions using <a href="https://khan.github.io/KaTeX/">KaTeX</a>:</p>
-<p>The <em>Gamma function</em> satisfying <span class="math">\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</span> is via the Euler integral</p>
-<div class="math"><pre>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.</pre></div>
-<blockquote>
-<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
-</blockquote>
-<doc-anchor-target id="uml-diagrams">
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Add a <strong>retype-action.yml</strong> file, see <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">step 1</doc-anchor-trigger></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Configure GitHub Pages, see <a href="/hosting/github-pages.md#step-2-configure-github-pages">step 2</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the branch to <code v-pre>retype</code>, see <a href="/hosting/github-pages.md#pick-a-branch">branch config</a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Set the <a href="/hosting/github-pages.md#set-a-url"><code v-pre>url</code></a></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-build">Build Action</a>.</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> More details on the Retype <a href="https://github.com/retypeapp/action-github-pages">GitHub Pages Action</a>.</li>
+</ul>
+<p>All of these options are configurable and your specific requirements may vary. There is a lot of flexibility. Please check out the <a href="../../configuration/project/">Project Configuration</a> options for full details.</p>
+<hr>
+<doc-anchor-target id="step-1-add-retype-actionyml-workflow">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uml-diagrams">#</doc-anchor-trigger>
-        <span>UML diagrams</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-add-retype-actionyml-workflow">#</doc-anchor-trigger>
+        <span>Step 1: Add <strong>retype-action.yml</strong> workflow</span>
     </h2>
 </doc-anchor-target>
-<p>You can render UML diagrams using <a href="https://mermaidjs.github.io/">Mermaid</a>. For example, this will produce a sequence diagram:</p>
-<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">sequenceDiagram
-Alice -&gt;&gt; Bob: Hello Bob, how are you?
-Bob--&gt;&gt;John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long&lt;br/&gt;long time, so long&lt;br/&gt;that the text does&lt;br/&gt;not fit on a row.
+<p>Add the following <strong>retype-action.yml</strong> file to your GitHub project within the <code v-pre>.github/workflows/</code> folder.</p>
+<p>If the <code v-pre>.github/workflows/</code> folders do not exist within the root of your project, you can manually create the folders and they will be committed along with the <strong>retype-action.yml</strong>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">.github/workflows/retype-action.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
-Bob--&gt;Alice: Checking with John...
-Alice-&gt;John: Yes... John, how are you?</pre></div>
-<p>And this will produce a flow chart:</p>
-<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">graph LR
-A[Square Rect] -- Link text --&gt; B((Circle))
-A --&gt; C(Round Rect)
-B --&gt; D{Rhombus}
-C --&gt; D</pre></div>
+jobs:
+  publish:
+    name: Publish to retype branch
 
-                                
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: retypeapp/action-build@latest
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true</code></pre>
+</doc-codeblock></div>
+<p>The above <strong>retype-action.yml</strong> workflow configuration instructs GitHub Actions to automatically build your website upon each commit to the <code v-pre>main</code> branch, and then deploy your new Retype powered website to a <code v-pre>retype</code> branch.</p>
+<p>If the <code v-pre>retype</code> branch is not available, the GitHub Action will automatically create the branch.</p>
+<p>If the default branch in your repo is <code v-pre>master</code>, change <code v-pre>- main</code> to <code v-pre>- master</code>. If the docs project was within a <code v-pre>docs</code> branch, change <code v-pre>- main</code> to <code v-pre>- docs</code>. The following snippet demonstrates setting the branch to <code v-pre>master</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">  push:
+    branches:
+      - master</code></pre>
+</doc-codeblock></div>
+<p>Commit your <strong>retype-action.yml</strong> file and push to your repo.</p>
+<doc-anchor-target id="retype_secret">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype_secret">#</doc-anchor-trigger>
+        <span>RETYPE_SECRET</span>
+    </h3>
+</doc-anchor-target>
+<p>If your project requires a Retype License Key, that key can be configured by adding a <a href="../../configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> secret to your repository and the corresponding <code v-pre>license: ${{ secrets.RETYPE_SECRET }}</code> configuration to your <strong>.github/workflows/retype-action.yml</strong> file.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">- uses: retypeapp/action-build@latest
+  with:
+    license: ${{ secrets.RETYPE_SECRET }}</code></pre>
+</doc-codeblock></div>
+<p>A standard <strong>.github/workflows/retype-action.yml</strong> file with a Retype license key would look like the following:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">.github/workflows/retype-action.yml</div>
+<pre class="language-yaml"><code v-pre class="language-yaml">name: Publish Retype powered website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: retypeapp/action-build@latest
+        with:
+          license: ${{ secrets.RETYPE_SECRET }}
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true</code></pre>
+</doc-codeblock></div>
+<hr>
+<doc-anchor-target id="step-2-configure-github-pages">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-configure-github-pages">#</doc-anchor-trigger>
+        <span>Step 2: Configure GitHub Pages</span>
+    </h2>
+</doc-anchor-target>
+<p>Once <doc-anchor-trigger to="#step-1-add-retype-actionyml-workflow">Step 1</doc-anchor-trigger> is complete, configure your <a href="/hosting/github-pages.md#step-2-configure-github-pages">GitHub Pages</a> setup.</p>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../tags/guide/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>guide</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
@@ -400,20 +333,20 @@ C --&gt; D</pre></div>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../guides/formatting/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">How to write</span>
+                                                <span class="block mt-1">Formatting</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../heart/heart2/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/cli/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Foobar</span>
+                                                <span class="block mt-1">Retype CLI</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -457,6 +390,6 @@ C --&gt; D</pre></div>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Heart", level: 1, icon: "file", hasPrism: false, hasMermaid: true, hasMath: true }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "GitHub Actions", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
