@@ -1,101 +1,108 @@
----
-label: 'What is Retype?'
-icon: lung
----
+\documentclass[a4paper, 10pt]{article}
 
-![](/static/retype-hero.png)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[german]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{blindtext}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{acronym}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[onehalfspacing]{setspace}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\pagestyle{fancy}
+\newcommand\ointint{\begingroup \displaystyle \unitlength 1pt \int\mkern-7.2mu \begin{picture}(0,3)
+\put(0,3){\oval(10,8)} \end{picture} \mkern-7mu\int\endgroup}
+\lhead{}
+\chead{}
+\rhead{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
 
-# Welcome to Retype
+\title{Das Klassische N-Körper-Problem}
 
-[Retype](https://retype.com/) is an :sparkles: ultra-high-performance :sparkles: static website generator that builds a website based on simple text files. Focus on your writing while Retype builds the rest.
+\begin{document}
 
-> “Retype is the perfect fit for my user persona - tech savvy non-devs who want to write using the best web standards out there” – jonnyfeelgood
+\maketitle
+\par
 
-No coding is required and just one Markdown file, such as a [README.md](https://www.makeareadme.com/), will get you started.
+\section{Das N-Körper-Problem}
+Für die Energieauswertung haben wir N = 100 Teilchen beobachtet. Dabei wurde der Zeitschrittparameter $\eta = 0.05$ verwendet und die Integration bis zur Zeit $t_{end} = 1$ durchgeführt.\\
+\\
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Euler.png}
+\caption{Euler-Integrator}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100EulerCromer.png}
+\caption{Euler-Cromer-Integrator}
+\end{minipage}
 
-The [retype.com](https://retype.com/) website was generated using Retype. View the [source](https://github.com/retypeapp/retype/blob/main/README.md) used to generate this very page.
+\end{figure}
 
-A new Retype powered website can be up and running within seconds once Retype is installed, which itself takes only a few seconds. :+1:
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100LeapFrog.png}
+\caption{Leap-Frog-Integrator}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Verlet.png}
+\caption{Verlet-Integrator}
+\end{minipage}
 
----
+\end{figure}
 
-## Quick start
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Hermite1.png}
+\caption{Hermite-Verfahren}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Hermite2.png}
+\caption{zeitumkehrbares Hermite-Verfahren}
+\end{minipage}
 
-You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
+\end{figure}
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Runge2.png}
+\caption{Runge-Kutta-Verfahren 2. Ordnung}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width = \textwidth]{E100Runge4.png}
+\caption{Runge-Kutta-Verfahren 4. Ordnung}
+\end{minipage}
 
-From your command line, navigate to a folder location where you have one or more Markdown **.md** files, such as a GitHub project.
+\end{figure}
 
-Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype start` [command](/guides/cli.md#retype-start):
+\noindent Die Betrachtung der Laufzeit zeigt, dass der Rechenaufwandt exponentiell mit zunehmender Teilchenzahl steigt.\\
+\\
+Für $\eta = 0.05$ und eine Gesamtzeit von $\pi$ ergeben sich im Vergleich für 2 und 100 Teilchen die folgenden Messwerte:
+\begin{center}
+\begin{tabular}{lcc}
+\textbf{Integrator} & \textbf{Laufzeit für N = 2} & \textbf{Laufzeit für N = 100}\\
+Euler & 0.053s & 723s\\
+Euler-Cromer & 0.048s & 746s\\
+Leap-Frog & 0.094s & 1426s\\
+Verlet & 0.056s & 674s\\
+Runge-Kutta (2. Ordnung) & 0.012s & 23.5s\\
+Runge-Kutta (4. Ordnung) & 0.031s & 34.5s \\
+Hermite & 0.052s & 187s\\
+Hermite, zeitumkehrbar & 0.040s & 149\\
 
-+++ NPM
+    \end{tabular}
 
-```
-npm install retypeapp --global
-retype start
-```
-
-+++ Yarn
-
-```
-yarn global add retypeapp
-retype start
-```
-
-+++ dotnet
-
-```
-dotnet tool install retypeapp --global
-retype start
-```
-
-+++
-
-That's it! Your new Retype website should be up and running.
-
-!!!
-You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
-
-All operating systems are supported, including Mac, Windows, and Linux.
-!!!
-
----
-
-## Features
-
-#### :icon-shield-check: It just works
-
-Retype has been built to be easy to use and should _"just work"_ out-of-the-box without any special configuration or troublesome setup.
-
-#### :icon-zap: Lightning fast
-
-Don't blink. Retype was built for speed.
-
-#### :icon-gear: Easy install
-
-[Installation](/guides/getting-started.md) takes only a few seconds. Then all you need is one Markdown **.md** file which Retype will start building a new website from.
-
-#### :icon-plug: Powerful
-
-Project level [configuration](/configuration/project.md) using **retype.yml** unlocks many more features and customization.
-
-#### :icon-pencil: Simple formatting
-
-Pages are [formatted](/guides/formatting.md) using Markdown syntax and Retype [components](/components/readme.md). Page level [configuration](/configuration/page.md) is available, such as setting a custom navigation [`label`](/configuration/page.md#label) or [`icon`](/configuration/page.md#icon).
-
-#### :icon-sync: Live reload
-
-If a change is detected, such as editing and saving an **.md** file, your Retype website will be updated almost instantly within the browser.
-
-#### :icon-server: Host anywhere
-
-Retype generates a basic HTML website that you can host on any web hosting service, or for free using [GitHub Pages](/hosting/github-pages.md), [Netlify](/hosting/netlify.md), or [Cloudflare](/hosting/cloudflare.md). No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website within your organizations network.
-
----
-
-## Support
-
-Do you have a technical support question, found a defect, or would like to make a feature request? Please create an [issue](https://github.com/retypeapp/retype/issues) and we will investigate right away.
-
-Do you have a general inquiry? Please feel free to contact us at hello@retype.com.
-
-We :heart: feedback.
+\end{center}
+Hierbei sei angemerkt, dass die Berechungen mit verschiedenen Laptops durchgeführt wurden, sodass es teilweise zu großen Unterschieden in der CPU Zeit kam.
+\end{document}
