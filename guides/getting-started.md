@@ -3,7 +3,7 @@ order: 100
 icon: rocket
 tags: [guide]
 ---
-# Lara is a putita Getting Started
+# Lara is Getting Started
 
 Getting started with Retype is super quick and you can be up and running within seconds.
 
