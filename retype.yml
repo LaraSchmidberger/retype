@@ -1,5 +1,5 @@
 input: .
-output: .retype
+output: build
 url: https://jackgraymer.github.io/retype/
 branding:
   title: Medicine
