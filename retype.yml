@@ -1,0 +1,15 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: Medicine
+  label: MD
+  logo: ./static/icon.png
+  logoalign: left
+  poweredByRetype: true
+links:
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
+footer:
+  copyright: Lara Schmidberger &copy; Copyright {{ year }}. All rights reserved.
+favicon: ./static/icon.png
